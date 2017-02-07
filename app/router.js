@@ -7,6 +7,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('templates', function() {
+    this.route('1-sweet-templates');
+  });
 });
 
 export default Router;

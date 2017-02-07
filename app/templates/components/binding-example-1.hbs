@@ -1,0 +1,13 @@
+<div class="large-example">
+  <strong>Hello {{name}}</strong> <br>
+  {{one-way-input name update=(action (mut name)) class="input-text" placeholder="Your name"}}
+</div>
+
+{{! Task 1:
+  If there is not name available, say "Who are you?!"
+  Else, use default behaviour.
+}}
+
+{{! Task 2:
+  If name is present, add class "cool-name" to strong element
+}}

@@ -1,0 +1,58 @@
+<div class="large-example">
+  <div class="row">
+    <div class="col-md-12">
+      <nav class="small-nav">
+
+        <label class="button">
+          Russian authors
+          {{one-way-checkbox showRussian update=(action (mut showRussian))}}
+        </label>
+
+      </nav>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <em>Russian Authors</em>
+
+    <ul>
+      {{#each russianAuthors as |author|}}
+        <li>{{author}}</li>
+      {{/each}}
+    </ul>
+
+  </div>
+
+</div>
+
+{{! Task 1:
+    Display all frenchAuthors
+}}
+
+{{! Task 2:
+    Display all guatemalaAuthors
+}}
+
+{{! Task 3:
+    If showRussian checkbox is selected, add 'active' class to the label of the checkbox
+}}
+
+{{! Task 4:
+    If showRussian checkbox is selected, show russian authors
+}}
+
+{{! Task 5:
+    Add the same mechanism we have for Russian Authors so we can control when to show French Authors
+}}
+
+{{! Task 6:
+    Add the same mechanism we have for Russian Authors so we can control when to show Guatemala Authors
+}}
+
+{{! Task 7:
+    Add a "All" checkbox that shows all authors in one column
+}}
+
+{{! Task 7:
+    Add a "None" checkbox that hides all authors
+}}

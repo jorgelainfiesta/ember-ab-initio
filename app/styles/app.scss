@@ -1,6 +1,7 @@
 @import 'base/all';
 @import 'modules/header';
 @import 'modules/index';
+@import 'modules/example';
 
 body {
   @include body-copy();
