@@ -13,6 +13,9 @@ Router.map(function() {
   this.route('actions', function() {
     this.route('1-bind-actions');
   });
+  this.route('components', function() {
+    this.route('1-component-images');
+  });
 });
 
 export default Router;
