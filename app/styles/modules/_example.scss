@@ -42,3 +42,15 @@
     }
   }
 }
+
+.shiny-cart {
+  .cart-item {
+    padding: 10px 0;
+    justify-content: space-between;
+    border-bottom: 1px solid #eaeaea;
+    align-items: center;
+    h3 {
+      margin: 0;
+    }
+  }
+}

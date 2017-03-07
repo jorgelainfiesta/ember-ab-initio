@@ -2,6 +2,7 @@
 @import 'modules/header';
 @import 'modules/index';
 @import 'modules/example';
+@import 'modules/image-gallery';
 
 body {
   @include body-copy();

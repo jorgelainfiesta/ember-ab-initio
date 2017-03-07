@@ -7,15 +7,15 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('templates', function() {
-    this.route('1-sweet-templates');
-  });
   this.route('actions', function() {
     this.route('1-bind-actions');
   });
-  this.route('components', function() {
-    this.route('1-component-images');
-  });
+
+  this.route('example-component');
+  this.route('1-templates');
+  this.route('2-actions');
+  this.route('3-components');
+  this.route('4-computed-properties');
 });
 
 export default Router;

@@ -1,0 +1,25 @@
+.image-gallery {
+  margin: unit-space(2);
+  text-align: center;
+
+  img {
+    max-height: 80vh;
+    background: #fff;
+    border: 5px dotted $bright-color;
+    padding: unit-space(1);
+  }
+
+  &.even-image img {
+    border-color: $bright-color-alt;
+  }
+
+  nav {
+    margin: unit-space(1) 0;
+  }
+  
+  .image-slider {
+    min-height: 400px;
+    padding: unit-space(1) 0;
+    border-top: 1px solid $alt-color;
+  }
+}
