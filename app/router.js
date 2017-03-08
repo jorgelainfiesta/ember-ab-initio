@@ -15,7 +15,10 @@ Router.map(function() {
   this.route('1-templates');
   this.route('2-actions');
   this.route('3-components');
-  this.route('4-computed-properties');
+  this.route('4-computed-properties', function() {
+    this.route('shopping-cart');
+    this.route('invoice-manager');
+  });
 });
 
 export default Router;
