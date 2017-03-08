@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="col-md-8 ">
+    <table class="table">
+      <thead>
+        <th>Description</th>
+        <th>Unit Price</th>
+        <th class="amount-col">Amount</th>
+      </thead>
+      <tbody>
+        {{#each userItems as |item|}}
+          <tr>
+            <td>
+              {{item.name}}
+            </td>
+            <td>
+              Rs. {{item.price}}
+            </td>
+            <td class="amount-col">
+              <button type="button" name="button" class="button amount-decrease" {{action 'decreaseQty' item}}>
+                -
+              </button>
+              {{item.amount}}
+              <button type="button" name="button" class="button amount-increase">
+                +
+              </button>
+            </td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+
+
+  <aside class="col-md-3 push-md-1">
+    <h3>Total: Rs. {{total}}</h3>
+    <h3>Taxes: Rs. {{taxes}}</h3>
+    <h2>Gran Total: Rs. {{grandTotal}}</h2>
+  </aside>
+</div>

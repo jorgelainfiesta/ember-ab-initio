@@ -1,4 +1,5 @@
 import Ember from 'ember';
+const { set } = Ember;
 
 export default Ember.Controller.extend({
   userItems: [
@@ -27,7 +28,7 @@ export default Ember.Controller.extend({
 
   actions: {
     changeItemAmount(item, qty) {
-      Ember.set(item, 'amount', qty);
+      set(item, 'amount', qty);
     }
   }
 });

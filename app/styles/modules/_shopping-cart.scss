@@ -1,0 +1,28 @@
+.shopping-cart {
+  margin: unit-space(1) 0;
+
+  thead th {
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .amount-col {
+    text-align: center;
+    .button {
+      display: block;
+      padding: 0;
+      margin: 0;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 15px;
+      box-sizing: border-box;
+    }
+    .amount-increase {
+      float: right;
+    }
+    .amount-decrease {
+      float: left;
+    }
+  }
+}

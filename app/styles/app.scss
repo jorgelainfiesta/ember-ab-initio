@@ -3,6 +3,7 @@
 @import 'modules/index';
 @import 'modules/example';
 @import 'modules/image-gallery';
+@import 'modules/shopping-cart';
 
 body {
   @include body-copy();
