@@ -4,6 +4,7 @@
 @import 'modules/example';
 @import 'modules/image-gallery';
 @import 'modules/shopping-cart';
+@import 'modules/invoice-manager';
 
 body {
   @include body-copy();

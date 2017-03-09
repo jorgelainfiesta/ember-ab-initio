@@ -47,3 +47,12 @@
 input[type='email'] {
   @extend .input-text;
 }
+
+select {
+  background: #fff;
+  color: $main-color;
+  border: 2px solid $main-color;
+  @include body-copy();
+  outline: none;
+  padding: 0 5px;
+}

@@ -1,0 +1,27 @@
+.invoice-manager {
+  nav {
+    padding: unit-space(1) 0;
+    border-bottom: 2px solid $main-color;
+    text-transform: uppercase;
+  }
+  .row {
+    margin: 0;
+  }
+  .invoices-list {
+    li {
+      margin-top: unit-space(1);
+      border-left: 5px solid $main-color;
+      box-sizing: border-box;
+    }
+    .status-draft {
+      border-color: $bright-color;
+    }
+    .status-pending {
+      border-color: $alt-color;
+    }
+    .status-completed {
+      border-color: $bright-color-alt;
+    }
+  }
+
+}

@@ -1,0 +1,29 @@
+<nav>
+  Filter by status: {{one-way-select currentStatus options=statuses update=(action (mut currentStatus))}}
+
+  <span class="pull-right">
+    Select currency: {{one-way-select currentCurrency options=currencies update=(action (mut currentCurrency))}}
+  </span>
+</nav>
+<ul class="row invoices-list">
+  {{#each invoices as |invoice|}}
+    <li class="col-md-6 status-{{invoice.status}}">
+      Client: <strong>{{invoice.client}}</strong> <br>
+      Amount: <strong>{{invoice.value}}</strong> <br>
+      Status: {{invoice.status}}
+    </li>
+  {{/each}}
+</ul>
+
+<h3>Reports</h3>
+<ul>
+  <li>
+    Amount of draft invoices: #
+  </li>
+  <li>
+    Amount pending payment: #
+  </li>
+  <li>
+    Amount of total payment sent: #
+  </li>
+</ul>
