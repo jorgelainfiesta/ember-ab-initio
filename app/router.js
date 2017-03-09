@@ -19,6 +19,7 @@ Router.map(function() {
     this.route('shopping-cart');
     this.route('invoice-manager');
   });
+  this.route('5-helpers');
 });
 
 export default Router;

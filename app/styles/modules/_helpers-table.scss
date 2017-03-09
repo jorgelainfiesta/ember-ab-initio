@@ -1,0 +1,19 @@
+.helpers-example-table {
+  margin-top: unit-space(2);
+
+  td {
+    text-align: center;
+    width: 20%;
+  }
+  td:first-child {
+    font-family: monospace;
+    text-align: left;
+    width: 60%;
+  }
+  th {
+    font-weight: bold;
+  }
+  th:first-child {
+    text-align: left;
+  }
+}
