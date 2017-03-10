@@ -6,6 +6,7 @@
 @import 'modules/shopping-cart';
 @import 'modules/invoice-manager';
 @import 'modules/helpers-table';
+@import 'modules/ajax';
 
 body {
   @include body-copy();

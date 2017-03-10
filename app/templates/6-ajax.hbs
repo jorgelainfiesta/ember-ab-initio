@@ -1,0 +1,48 @@
+<div class="container ajax-container">
+  <h2>Handling AJAX</h2>
+  <p>Review the slides tasks to experiment with AJAX requests</p>
+
+  {{!image-gallery images=imageSources}}
+  <div class="row">
+    <div class="col-md-4">
+      <h3>Using XHR object</h3>
+      <button type="button" name="button" class="button" {{action 'requestXHR' method validUrl}}>
+        Request
+      </button>
+      <button type="button" name="button" class="button invalid" {{action 'requestXHR' method invalidUrl}}>
+        Request invalid
+      </button>
+    </div>
+    <div class="col-md-8">
+      {{code-snippet name='ajax-xhr-example.js'}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <h3>Using jQuery AJAX</h3>
+      <button type="button" name="button" class="button" {{action 'requestjQuery' method validUrl}}>
+        Request
+      </button>
+      <button type="button" name="button" class="button invalid" {{action 'requestjQuery' method invalidUrl}}>
+        Request invalid
+      </button>
+    </div>
+    <div class="col-md-8">
+      {{code-snippet name='ajax-jquery-example.js'}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <h3>Using Ember-ajax promise</h3>
+      <button type="button" name="button" class="button" {{action 'requestPromise' method validUrl}}>
+        Request
+      </button>
+      <button type="button" name="button" class="button invalid" {{action 'requestPromise' method invalidUrl}}>
+        Request invalid
+      </button>
+    </div>
+    <div class="col-md-8">
+      {{code-snippet name='ajax-promise-example.js'}}
+    </div>
+  </div>
+</div>

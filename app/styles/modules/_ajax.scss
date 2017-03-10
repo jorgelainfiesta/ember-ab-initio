@@ -1,0 +1,11 @@
+.ajax-container .row {
+  margin-top: unit-space(2);
+  h3 {
+    margin-bottom: unit-space(2);
+    color: $action-color;
+  }
+  .button.invalid {
+    background: $alt-color;
+    margin-top: unit-space(2);
+  }
+}

@@ -20,6 +20,7 @@ Router.map(function() {
     this.route('invoice-manager');
   });
   this.route('5-helpers');
+  this.route('6-ajax');
 });
 
 export default Router;
