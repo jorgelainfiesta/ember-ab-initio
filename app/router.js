@@ -21,6 +21,7 @@ Router.map(function() {
   });
   this.route('5-helpers');
   this.route('6-ajax');
+  this.route('7-state-management');
 });
 
 export default Router;
