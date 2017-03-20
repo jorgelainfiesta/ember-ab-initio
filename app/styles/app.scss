@@ -8,6 +8,7 @@
 @import 'modules/helpers-table';
 @import 'modules/ajax';
 @import 'modules/state-management';
+@import 'modules/magazine';
 
 body {
   @include body-copy();

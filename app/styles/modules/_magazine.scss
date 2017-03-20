@@ -1,0 +1,35 @@
+.magazine-container {
+  h1 {
+    font-size: 45px;
+    font-weight: lighter;
+    color: $action-color;
+    display: inline-block;
+    border-bottom: 10px solid $action-color;
+    margin: unit-space(2) 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    &:after {
+      content: '';
+      display: block;
+    }
+  }
+  .article {
+    border-top: 1px dotted #ccc;
+    padding: unit-space(1) 0;
+
+    img {
+      max-width: 100%;
+    }
+
+    h2 {
+      font-size: 24px;
+      text-transform: none;
+      margin: 0;
+    }
+    .read-more {
+      display: block;
+      text-transform: uppercase;
+      margin-top: unit-space(1);
+    }
+  }
+}
