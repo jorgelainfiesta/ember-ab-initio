@@ -22,6 +22,7 @@ Router.map(function() {
   this.route('5-helpers');
   this.route('6-ajax');
   this.route('7-state-management');
+  this.route('9-services');
 });
 
 export default Router;

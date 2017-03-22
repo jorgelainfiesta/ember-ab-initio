@@ -9,6 +9,7 @@
 @import 'modules/ajax';
 @import 'modules/state-management';
 @import 'modules/magazine';
+@import 'modules/secure-section';
 
 body {
   @include body-copy();
