@@ -1,0 +1,10 @@
+{{one-way-input name update=(action (mut name)) class="input-text" placeholder="Name"}}
+<br>
+<label>
+  {{one-way-checkbox conditions update=(action (mut conditions))}}
+  Accept terms and conditions
+</label>
+<br>
+<button type="button" name="button" class="button" disabled={{notValid}}>
+  Continue
+</button>

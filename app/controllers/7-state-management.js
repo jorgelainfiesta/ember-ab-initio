@@ -22,5 +22,5 @@ export default Ember.Controller.extend({
       veg: false
     }
   ],
-  articleUrl: 'http://content.criticarq.gt/wp-json/wp/v2/articles/713'
+  articleUrl: 'api/authors'
 });

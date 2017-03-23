@@ -1,0 +1,7 @@
+{{#unless isHidden}}
+  <div class="target-box"></div>
+{{/unless}}
+
+<button type="button" name="button" class="button" {{action 'toggleHide'}}>
+  {{if isHidden 'Show' 'Hide'}}
+</button>

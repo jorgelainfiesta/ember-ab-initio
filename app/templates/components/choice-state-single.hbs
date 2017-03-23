@@ -1,0 +1,18 @@
+<ul class="choice-list">
+  {{#each options as |option|}}
+    <li class="{{if option.veg 'veg' 'nonveg'}} {{if (equals option.name selected.name) 'selected'}}" {{action 'select' option}}>
+      {{option.name}}
+    </li>
+  {{/each}}
+</ul>
+
+{{#if selected}}
+<div class="selected-list">
+  <h3>Selected</h3>
+  <ul class="choice-list">
+    <li class="{{if selected.veg 'veg' 'nonveg'}}">
+      {{selected.name}}
+    </li>
+  </ul>
+</div>
+{{/if}}
